@@ -35,3 +35,7 @@ dependencies {
 tasks.named('test') {
 	useJUnitPlatform()
 }
+//defining profile to be used on bootrun
+bootRun {
+	systemProperty 'spring.profiles.active', 'testdata'
+}
