@@ -32,6 +32,7 @@ dependencies {
 	implementation 'org.springframework.boot:spring-boot-starter-validation'
 	implementation 'org.junit.jupiter:junit-jupiter:5.8.1'
 	implementation 'org.assertj:assertj-core:3.22.0'
+	implementation 'org.springframework.retry:spring-retry'
 	testImplementation 'org.springframework.boot:spring-boot-starter-test'
 	testImplementation 'org.springframework.boot:spring-boot-starter-webflux'
 	annotationProcessor 'org.springframework.boot:spring-boot-configuration-processor' // added to generate metadata from config bean
