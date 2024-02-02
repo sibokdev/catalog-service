@@ -1,0 +1,6 @@
+
+#  Profile-specific property files take precedence over the non-specific
+#  property files, so the value defined in application-dev.yml would take
+#  precedence over the one in application.yml.
+polar:
+  greeting: Welcome to the local book catalog!
