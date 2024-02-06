@@ -23,7 +23,7 @@ class BookControllerMvcTests {
                 .willThrow(BookNotFoundException.class);
         mockMvc
                 .perform(get("/books/" + isbn))
- .andExpect(status().isNotFound());
+                .andExpect(status().isNotFound());
     }
 }
 
