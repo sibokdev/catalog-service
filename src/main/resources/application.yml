@@ -14,5 +14,14 @@ spring:
         initial-interval: 1000 #Initial retry interval for backoff (ms)
         max-interval: 2000 #Maximum retry interval for backoff (ms)
         multiplier: 1.1 #Multiplier to compute the next interval
+  datasource:
+    username: user
+    password: password
+    url: jdbc:postgresql://localhost:5432/polardb_catalog
+management:
+  endpoints:
+    web:
+      exposure:
+        include: refresh #Exposes the /actuator/refresh endpoint through HTTP
 polar:
   greeting: Welcome to the local book catalog!
