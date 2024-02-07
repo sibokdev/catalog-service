@@ -6,6 +6,9 @@ import org.springframework.stereotype.Component;
 import org.springframework.context.event.EventListener;
 import org.springframework.boot.context.event.ApplicationReadyEvent;
 import com.polarbookshop.catalogservice.domain.Book;
+
+import java.util.List;
+
 @Component // marking class as spring compenent to load in spring container
 @Profile("testdata") // defining the profile
 public class BookDataLoader {
@@ -15,14 +18,14 @@ public class BookDataLoader {
     }
     @EventListener(ApplicationReadyEvent.class) // next method should be executed once the application starts correctly
     public void loadBookTestData() {
+        bookRepository.deleteAll();
         // changed new book for Book.of to use the record class constructor
         // The framework takes care of assigning a value for the identifier and the version under the hood.
         var book1 = Book.of("1234567891", "Northern Lights",
                 "Lyra Silverstar", 9.90);
         var book2 = Book.of("1234567892", "Polar Journey",
                 "Iorek Polarson", 12.90);
-        bookRepository.save(book1);
-        bookRepository.save(book2);
+        bookRepository.saveAll(List.of(book1,book2));
     }
 
 }
