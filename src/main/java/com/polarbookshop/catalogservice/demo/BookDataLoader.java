@@ -22,9 +22,9 @@ public class BookDataLoader {
         // changed new book for Book.of to use the record class constructor
         // The framework takes care of assigning a value for the identifier and the version under the hood.
         var book1 = Book.of("1234567891", "Northern Lights",
-                "Lyra Silverstar", 9.90);
+                "Lyra Silverstar", 9.90,"polartopia");
         var book2 = Book.of("1234567892", "Polar Journey",
-                "Iorek Polarson", 12.90);
+                "Iorek Polarson", 12.90,"polartopia");
         bookRepository.saveAll(List.of(book1,book2));
     }
 

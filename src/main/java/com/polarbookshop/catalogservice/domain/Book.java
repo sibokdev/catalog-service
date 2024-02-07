@@ -31,6 +31,7 @@ public record Book(
         @NotNull(message = "The book price must be defined.")
         @Positive(message = "The book price must be greater than zero.")
         Double price,
+        String publisher,
         @CreatedDate
         Instant createdDate,
         @LastModifiedDate
@@ -40,8 +41,8 @@ public record Book(
         int version
         ) {
 
-        public static Book of(String isbn, String title, String author, Double price) {
-                return new Book(null, isbn, title, author, price,null,null, 0); // An entity is considered new when the ID is null and the version is 0.
+        public static Book of(String isbn, String title, String author, Double price, String publisher) {
+                return new Book(null, isbn, title, author, price,publisher,null,null, 0); // An entity is considered new when the ID is null and the version is 0.
         }
 
 }
