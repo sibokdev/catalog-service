@@ -1,5 +1,6 @@
-package com.polarbookshop.catalogservice.controllers;
+package com.polarbookshop.catalogservice.web;
 
+import com.polarbookshop.catalogservice.controllers.BookController;
 import com.polarbookshop.catalogservice.domain.BookNotFoundException;
 import com.polarbookshop.catalogservice.services.BookService;
 import org.junit.jupiter.api.Test;

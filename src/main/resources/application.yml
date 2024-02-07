@@ -23,7 +23,7 @@ spring:
       maximum-pool-size: 5 #The maximum number of connections HikariCP will keep in the pool
   sql:
     init:
-    mode: always
+      mode: always
 management:
   endpoints:
     web:

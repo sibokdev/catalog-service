@@ -1,4 +1,4 @@
-package com.polarbookshop.catalogservice.unittest;
+package com.polarbookshop.catalogservice.domain;
 
 import java.util.Set;
 import javax.validation.ConstraintViolation;
