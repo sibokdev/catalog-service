@@ -1,5 +1,5 @@
 server:
-  port: 8080
+  port: 9001
   shutdown: graceful
   tomcat:
     connection-timeout: 2s
@@ -37,5 +37,5 @@ management:
     web:
       exposure:
         include: refresh #Exposes the /actuator/refresh endpoint through HTTP
-polar:
-  greeting: Welcome to the local book catalog!
+#polar:
+#  greeting: Welcome to the local book catalog!

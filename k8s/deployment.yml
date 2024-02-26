@@ -5,6 +5,7 @@ metadata:
   labels: #A set of labels attached to the Deployment
     app: catalog-service #This Deployment is labeled with “app=catalog-service.”
 spec:
+  replicas: 1 #number of pod replicas to deploy
   selector: #Defines the labels used to select the Pods to be scaled
     matchLabels:
       app: catalog-service

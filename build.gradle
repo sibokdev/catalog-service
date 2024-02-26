@@ -68,5 +68,4 @@ bootBuildImage {
 			url = project.findProperty("registryUrl")
 		}
 	}
-
 }

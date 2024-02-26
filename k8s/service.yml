@@ -12,4 +12,4 @@ spec:
   ports:
   - protocol: TCP # nw protocol used by the service
     port: 80 # port exposed by the service (kubernetes service)
-    targetPort: 8080 # port exposed by the pods targeted by the service (a pod is containing a container that we created exposing the port 8080)
+    targetPort: 9001 # port exposed by the pods targeted by the service (a pod is containing a container that we created exposing the port 8080)
