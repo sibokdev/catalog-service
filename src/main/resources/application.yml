@@ -46,5 +46,8 @@ management:
       group:
         readiness:
           include: readinessState,redis
+  metrics:
+    tags:
+      application: ${spring.application.name}
 #polar:
 #  greeting: Welcome to the local book catalog!
