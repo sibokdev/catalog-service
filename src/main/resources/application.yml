@@ -36,6 +36,15 @@ management:
   endpoints:
     web:
       exposure:
-        include: refresh #Exposes the /actuator/refresh endpoint through HTTP
+        include: refresh, health #Exposes the /actuator/refresh endpoint through HTTP
+  endpoint:
+    health:
+      show-details: always
+      show-components: always
+      probes:
+        enabled: true
+      group:
+        readiness:
+          include: readinessState,redis
 #polar:
 #  greeting: Welcome to the local book catalog!
