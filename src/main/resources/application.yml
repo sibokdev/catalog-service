@@ -36,7 +36,7 @@ management:
   endpoints:
     web:
       exposure:
-        include: refresh, health, metrics #Exposes the /actuator/refresh endpoint through HTTP
+        include: refresh, health, metrics, prometheus #Exposes the /actuator/refresh endpoint through HTTP
   endpoint:
     health:
       show-details: always

@@ -43,6 +43,7 @@ dependencies {
 	annotationProcessor 'org.springframework.boot:spring-boot-configuration-processor' // added to generate metadata from config bean
 	testImplementation 'org.testcontainers:postgresql' //Provides container management features for PostgreSQL databases
 	implementation 'org.flywaydb:flyway-core'
+	runtimeOnly 'io.micrometer:micrometer-registry-prometheus'
 }
 
 dependencyManagement {
